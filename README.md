@@ -16,25 +16,39 @@ The goal is simple: make it easier to manage products, orders, and sales from on
 |:---:|:---:|:---:|
 | Coming soon | Coming soon | Coming soon |
 
-## What I'm working on
+## Features built so far
 
-- A straightforward sales flow for daily operations
-- Product and order management
-- A mobile interface that's quick to use during a busy day
-- Reliable data handling and testing
+- **Product catalog:** create, edit, and organize products and categories, with product images.
+- **Point of sale:** build a cart, check out, and record sales.
+- **Flexible payments:** accept partial payments and complete outstanding balances from sales history.
+- **Sales history:** browse past sales and review transaction details.
+- **Initial inventory:** register starting stock for products without requiring a production recipe, with optional expiration dates.
+- **Multi-branch foundation:** organization and branch onboarding with role-aware access.
+- **Authentication:** email/password, Google, and Apple sign-in flows.
+
+The app is **still in development**. Features listed here are implemented in the private codebase, not a claim of a production launch.
 
 ## Under the hood
 
 The app is built with **React Native, Expo, and TypeScript**, with **Supabase and PostgreSQL** on the backend.
 
-I'm using Jest and database tests to catch regressions, and Conventional Commits with Release Please to keep releases organized.
+The interface uses **HeroUI Native** and a Lavender theme. **TanStack Query** manages server-state fetching and cache invalidation. I'm using **Jest / React Native Testing Library** and **pgTAP** database tests to catch regressions, alongside Conventional Commits, CI, and Release Please to keep changes organized.
+
+The private codebase also includes role-based access checks and database-level safeguards around inventory operations.
 
 ## Updates
 
-I'll share product updates here as new versions are ready.
+Selected milestones from the private project's release history, summarized without exposing its source code or internal infrastructure.
 
 <!-- RELEASES:START -->
-_No updates posted yet._
+- **v1.8.1 · Nov 7, 2026** — Tightened database permissions for initial stock registration.
+- **v1.8.0 · Nov 7, 2026** — Added initial inventory tracking for products without production recipes.
+- **v1.7.0 · Oct 30, 2026** — Added partial payments, sales history, and the ability to complete pending payments.
+- **v1.6.0 · Oct 29, 2026** — Introduced the POS checkout flow and improved product editing.
+- **v1.5.0 · Oct 29, 2026** — Added product images and catalog UI improvements.
+- **v1.4.0 · Oct 20, 2026** — Added product catalog management.
+- **v1.2.0 · Oct 19, 2026** — Added organization and branch onboarding.
+- **v1.0.0 · Oct 17, 2026** — Initial authentication and theme foundation.
 <!-- RELEASES:END -->
 
 ## About
