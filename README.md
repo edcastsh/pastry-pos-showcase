@@ -23,6 +23,8 @@ The goal is simple: make it easier to manage products, orders, and sales from on
 - **Flexible payments:** accept partial payments and complete outstanding balances from sales history.
 - **Sales history:** browse past sales and review transaction details.
 - **Initial inventory:** register starting stock for products without requiring a production recipe, with optional expiration dates.
+- **Physical stock counts:** count actual stock as part of the inventory workflow.
+- **Supplier catalog:** manage suppliers as part of inventory operations.
 - **Multi-branch foundation:** organization and branch onboarding with role-aware access.
 - **Authentication:** email/password, Google, and Apple sign-in flows.
 
@@ -41,6 +43,8 @@ The private codebase also includes role-based access checks and database-level s
 Selected milestones from the private project's release history, summarized without exposing its source code or internal infrastructure.
 
 <!-- RELEASES:START -->
+- **v1.10.0 · Nov 8, 2026** — Added a supplier catalog for inventory management.
+- **v1.9.0 · Nov 8, 2026** — Added a physical stock count workflow.
 - **v1.8.1 · Nov 7, 2026** — Tightened database permissions for initial stock registration.
 - **v1.8.0 · Nov 7, 2026** — Added initial inventory tracking for products without production recipes.
 - **v1.7.0 · Oct 30, 2026** — Added partial payments, sales history, and the ability to complete pending payments.
